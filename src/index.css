@@ -1,0 +1,118 @@
+html,
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  width: 100vw;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ml {
+  margin-left: 1.1875rem;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 34.375rem;
+  width: 100%;
+  min-height: 34.375rem;
+  background-color: #fff;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  max-width: 34.375rem;
+  width: 100%;
+  height: 4.0625em;
+  background: linear-gradient(90deg, #672280 0%, #A626D3 100%);
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+header img {
+  width: 2rem;
+  height: 1.6875rem;
+  margin-left: 1.25rem;
+}
+
+header h2,
+p {
+  color: #FFF;
+  font-weight: 500;
+  line-height: normal;
+  font-style: normal;
+}
+
+header h2 {
+  color: #FFF;
+  font-size: 1.29675rem;
+  letter-spacing: -0.1296875rem;
+  margin-left: 0.125rem;
+}
+
+header p {
+  text-align: right;
+  font-size: 0.75rem;
+  margin-left: auto;
+  margin-right: 2.3125rem;
+}
+
+form {
+  font-family: Karla;
+}
+
+.form--inp-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.form--input-1,
+.form--input-2 {
+  width: 14.375rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  border: 1px solid #D5D4D8;
+  color: black;
+  /*#D5D4D8; */
+  margin-top: 36px;
+  padding: 10px;
+}
+
+.form--btn {
+  color: #FFF;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+  width: 477px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+  margin: 15px 36px 36px;
+}
+
+.meme--image--div {
+  display: flex;
+  max-width: 477px;
+  height: 268px;
+  margin: 0 auto;
+}
+
+.meme--image {
+  width: 100%;
+  overflow: hidden;
+}
