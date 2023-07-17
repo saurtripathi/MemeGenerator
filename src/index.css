@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Impact';
+  src: local('Impact'), url(./fonts/impact.ttf) format('truetype');
+}
+
+
+
 html,
 body {
   background-color: whitesmoke;
@@ -17,7 +24,8 @@ body {
 }
 
 #root {
-  margin: 0 auto;
+
+  margin:0 auto;
   max-width: 34.375rem;
   width: 100%;
   min-height: 34.375rem;
@@ -84,7 +92,6 @@ form {
   border-radius: 0.25rem;
   border: 1px solid #D5D4D8;
   color: black;
-  /*#D5D4D8; */
   margin-top: 36px;
   padding: 10px;
 }
@@ -107,6 +114,7 @@ form {
 
 .meme--image--div {
   display: flex;
+  position: relative;
   max-width: 477px;
   height: 268px;
   margin: 0 auto;
@@ -115,4 +123,44 @@ form {
 .meme--image {
   width: 100%;
   overflow: hidden;
+}
+.meme--top,.meme--bottom {
+  color: #FFF;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  font-family: Impact;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.meme--top {
+  position: absolute;
+  top: 1rem;
+  left: 5%;
+  right:5%;
+}
+.meme--bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 5%;
+  right:5%;
+}
+
+@media(max-width:425px){
+  .form--inp-group {
+    gap:1rem;
+    padding: 0 1em;
+  }
+  .form--input-1,
+  .form--input-2 {
+    flex-shrink: 1;
+  }
+  .form--btn {
+    margin: 2rem auto;
+    max-width: 400px;
+    width: 100%;
+    padding:0 1rem ;
+  }
 }
