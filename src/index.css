@@ -24,8 +24,9 @@ body {
 }
 
 #root {
-
-  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   max-width: 34.375rem;
   width: 100%;
   min-height: 34.375rem;
@@ -80,20 +81,21 @@ form {
 .form--inp-group {
   display: flex;
   justify-content: center;
-  gap: 20px;
-
+  gap: 1rem;
+  /* flex-grow: 1; */
+  margin: 2.25rem 2rem 2.25rem;
 }
 
 .form--input-1,
 .form--input-2 {
   width: 14.375rem;
   height: 2.1875rem;
-  flex-shrink: 0;
   border-radius: 0.25rem;
   border: 1px solid #D5D4D8;
   color: black;
-  margin-top: 36px;
+  /* margin-top: 36px; */
   padding: 10px;
+  flex: 1 2 0px;
 }
 
 .form--btn {
@@ -104,7 +106,8 @@ form {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -1px;
-  width: 477px;
+  max-width: 477px;
+  width:100%;     
   height: 40px;
   flex-shrink: 0;
   border-radius: 5px;
@@ -115,7 +118,7 @@ form {
 .meme--image--div {
   display: flex;
   position: relative;
-  max-width: 477px;
+  /* max-width: 477px; */
   height: 268px;
   margin: 0 auto;
 }
@@ -124,7 +127,9 @@ form {
   width: 100%;
   overflow: hidden;
 }
-.meme--top,.meme--bottom {
+
+.meme--top,
+.meme--bottom {
   color: #FFF;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   font-family: Impact;
@@ -135,50 +140,61 @@ form {
   text-align: center;
   letter-spacing: 1px;
 }
+
 .meme--top {
   position: absolute;
   top: 1rem;
   left: 5%;
-  right:5%;
+  right: 5%;
 }
+
 .meme--bottom {
   position: absolute;
   bottom: 1rem;
   left: 5%;
-  right:5%;
+  right: 5%;
 }
 
-@media(max-width:425px){
+@media(max-width:550px) {
 
   body {
-    height: 93vh;
+    /* height: 93vh; */
   }
 
   #root {
-    height: 93vh;
+    height: 100vh;
   }
-  .form--inp-group {
 
+  .form--inp-group {
+    /* background-color: red; */
+    justify-content: space-around;
+    gap: 1rem;
+    /* margin: 0 1rem; */
   }
+
   .form--input-1,
   .form--input-2 {
 
-    width: 176px;
+    /* width: 11rem; */
     max-width: 100%;
   }
+
   .form--btn {
-    display: flex;
-    margin: 2rem auto;
-    max-width: 368px;
-    width: 100%;
-    justify-content: center;
+    /* display: flex; */
+    margin: 0 auto 2rem ;
+    /* max-width: 368px; */
+    width: 90%;
+    /* justify-content: center; */
     padding: 0.5rem 0;
     align-self: center;
   }
+
   .meme--image--div {
     margin: 0 1rem;
   }
+
   .meme--image {
     border-radius: 1rem;
   }
 }
+
