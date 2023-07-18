@@ -155,7 +155,7 @@ form {
   right: 5%;
 }
 
-@media(max-width:425px) {
+@media(max-width:550px) {
 
   body {
     height: 93vh;
@@ -175,8 +175,8 @@ form {
   .form--input-1,
   .form--input-2 {
 
-    /* width: 11rem; */
-    max-width: 100%;
+    width: 8.5rem;
+    max-width: 11rem;
   }
 
   .form--btn {
