@@ -149,6 +149,15 @@ form {
 }
 
 @media(max-width:425px){
+
+  body {
+    height: 93vh;
+  }
+
+  #root {
+    /* background-color: red; */
+    height: 93vh;
+  }
   .form--inp-group {
     gap:1rem;
     padding: 0 1em;
@@ -158,9 +167,18 @@ form {
     flex-shrink: 1;
   }
   .form--btn {
+    display: flex;
     margin: 2rem auto;
-    max-width: 400px;
+    max-width: 368px;
     width: 100%;
-    padding:0 1rem ;
+    justify-content: center;
+    padding: 0.5rem 0;
+    align-self: center;
+  }
+  .meme--image--div {
+    margin: 0 1rem;
+  }
+  .meme--image {
+    border-radius: 1rem;
   }
 }
