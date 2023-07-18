@@ -155,7 +155,7 @@ form {
   right: 5%;
 }
 
-@media(max-width:550px) {
+@media(max-width:425px) {
 
   body {
     height: 93vh;
