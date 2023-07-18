@@ -159,14 +159,13 @@ form {
     height: 100vh;
   }
   .form--inp-group {
-    gap:0;
-    /* padding: 0 1em; */
+
   }
   .form--input-1,
   .form--input-2 {
-    flex-shrink: 1;
-    margin: 2rem  1rem 0;
-    
+
+    width: 176px;
+    max-width: 100%;
   }
   .form--btn {
     display: flex;
