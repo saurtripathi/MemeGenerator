@@ -112,7 +112,7 @@ form {
   flex-shrink: 0;
   border-radius: 5px;
   background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
-  margin: 15px 36px 36px;
+  margin: 0 36px 36px;
 }
 
 .meme--image--div {
@@ -158,11 +158,11 @@ form {
 @media(max-width:550px) {
 
   body {
-    /* height: 93vh; */
+    height: 93vh;
   }
 
   #root {
-    height: 100vh;
+    height: 93vh;
   }
 
   .form--inp-group {
