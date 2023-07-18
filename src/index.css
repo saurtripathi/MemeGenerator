@@ -82,8 +82,9 @@ form {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  /* flex-grow: 1; */
   margin: 2.25rem 2rem 2.25rem;
+
+
 }
 
 .form--input-1,
@@ -93,7 +94,6 @@ form {
   border-radius: 0.25rem;
   border: 1px solid #D5D4D8;
   color: black;
-  /* margin-top: 36px; */
   padding: 10px;
   flex: 1 2 0px;
 }
@@ -107,7 +107,7 @@ form {
   line-height: normal;
   letter-spacing: -1px;
   max-width: 477px;
-  width:100%;     
+  width: 100%;
   height: 40px;
   flex-shrink: 0;
   border-radius: 5px;
@@ -119,7 +119,6 @@ form {
 .meme--image--div {
   display: flex;
   position: relative;
-  /* max-width: 477px; */
   height: 268px;
   margin: 0 auto;
 }
@@ -167,16 +166,21 @@ form {
   }
 
   .form--inp-group {
+
+    max-width: 550px;
     justify-content: space-around;
-    margin: 2.25rem 1.75rem 2.25rem;
+    margin: 2rem 1rem 2rem;
+
+  }
+
+  .form--input-1,
+  .form--input-2 {
+    width: 100%;
   }
 
   .form--btn {
-    /* display: flex; */
-    margin: 0 auto 2rem ;
-    /* max-width: 368px; */
+    margin: 0 0 2rem;
     width: 90%;
-    /* justify-content: center; */
     padding: 0.5rem 0;
     align-self: center;
   }
@@ -189,4 +193,3 @@ form {
     border-radius: 1rem;
   }
 }
-
