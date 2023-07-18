@@ -112,7 +112,8 @@ form {
   flex-shrink: 0;
   border-radius: 5px;
   background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
-  margin: 0 36px 36px;
+  margin: 0 2.25rem 2.25rem;
+  border-style: none;
 }
 
 .meme--image--div {
@@ -166,17 +167,8 @@ form {
   }
 
   .form--inp-group {
-    /* background-color: red; */
     justify-content: space-around;
-    gap: 1rem;
-    /* margin: 0 1rem; */
-  }
-
-  .form--input-1,
-  .form--input-2 {
-
-    width: 9rem;
-    max-width: 11rem;
+    margin: 2.25rem 1.75rem 2.25rem;
   }
 
   .form--btn {
