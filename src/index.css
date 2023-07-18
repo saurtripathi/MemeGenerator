@@ -151,12 +151,12 @@ form {
 @media(max-width:425px){
 
   body {
-    height: 100vh;
+    height: 93vh;
   }
 
   #root {
     background-color: red;
-    height: 100vh;
+    height: 93vh;
   }
   .form--inp-group {
 
