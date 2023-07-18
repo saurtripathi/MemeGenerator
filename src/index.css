@@ -151,20 +151,22 @@ form {
 @media(max-width:425px){
 
   body {
-    height: 93vh;
+    height: 100vh;
   }
 
   #root {
-    /* background-color: red; */
-    height: 93vh;
+    background-color: red;
+    height: 100vh;
   }
   .form--inp-group {
-    gap:1rem;
-    padding: 0 1em;
+    gap:0;
+    /* padding: 0 1em; */
   }
   .form--input-1,
   .form--input-2 {
     flex-shrink: 1;
+    margin: 2rem  1rem 0;
+    
   }
   .form--btn {
     display: flex;
